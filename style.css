@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(./imgs/bg.jpg);
+}
+
+/* _____________NAVIGATION MENU_____________*/
+
+nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Tajawal', sans-serif;
+  background-color: rgba(50,50,50,0.8);
+}
+
+
+/* LOGO */
+
+.logo{
+  color: #dfd9d8;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+/* MENU BUTTON */
+
+.nav-btn div{
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+/* _____________END OF NAVIGATION MENU _____________*/
+
+
+/* _____________MAIN MENU____________ */
+
+/* MENU CONTAINER */
+
+.menu-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, black, grey);
+  clip-path: circle(0%);
+  transition: clip-path 1s;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.ifcheck:checked ~ .menu-container{
+  clip-path: circle(100%);
+}
+
+/* CHECK BUTTON BEHIND NAV BUTTON */
+
+.ifcheck{
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  height: 40px;
+  width: 40px;
+}
+
+
+/* MENU LIST  */
+
+.menu{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  list-style: none;
+  text-align: center;
+}
+
+.menu li{
+  margin: 20px 0;
+}
+
+/* MENU LINKS */
+
+.menu a{
+  font-size: 33px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.menu a:hover{
+  cursor: url("./imgs/bomb.png"),auto;
+  background: -webkit-linear-gradient(pink , black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu a:active{
+  color: #4b1d13;
+  cursor: url("./imgs/explode.png"),auto;
+}
