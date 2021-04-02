@@ -68,7 +68,7 @@ nav{
 .ifcheck{
   position: absolute;
   right: 0;
-  opacity: 0;
+  opacity: 1;
   height: 40px;
   width: 40px;
 }
@@ -109,4 +109,130 @@ nav{
 .menu a:active{
   color: #4b1d13;
   cursor: url("./imgs/explode.png"),auto;
+}
+
+/* SCREENSS */
+
+@media screen and (max-width: 1024px) {
+
+  /* LOGO */
+  .logo{
+   color: #dfd9d8;
+   letter-spacing: 5px;
+   font-size: 1rem;
+   margin-left: 10%;
+  }
+
+  /* MENU BUTTON */
+
+  .nav-btn div{
+   width: 25px;
+   height: 5px;
+   background-color: black;
+   margin: 5px;
+   border-radius: 50px;
+  }
+
+  /* hidden checkbox */
+  .ifcheck{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  /* LOGO */
+  .logo{
+   color: #dfd9d8;
+   letter-spacing: 5px;
+   font-size: 2rem;
+   margin-left: 10%;
+  }
+
+  /* MENU BUTTON */
+
+  .nav-btn div{
+   width: 35px;
+   height: 6px;
+   background-color: black;
+   margin: 10px;
+   border-radius: 50px;
+  }
+
+  /* hidden checkbox */
+  .ifcheck{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  /* LOGO */
+  .logo{
+   color: #dfd9d8;
+   letter-spacing: 5px;
+   font-size: 3rem;
+   margin-left: 10%;
+  }
+
+  /* MENU BUTTON */
+
+  .nav-btn div{
+   width: 45px;
+   height: 7px;
+   background-color: black;
+   margin: 15px;
+   border-radius: 50px;
+  }
+
+  /* hidden checkbox */
+  .ifcheck{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  /* LOGO */
+ .logo{
+   color: #dfd9d8;
+   letter-spacing: 5px;
+   font-size: 4rem;
+   margin-left: 10%;
+ }
+
+ /* MENU BUTTON */
+
+
+ .nav-btn div{
+   width: 55px;
+   height: 8px;
+   background-color: black;
+   margin: 20px;
+   border-radius: 50px;
+ }
+
+ /* hidden checkbox */
+ .ifcheck{
+   position: absolute;
+   right: 0;
+   opacity: 0;
+   width: 100px;
+   height: 100px;
+ }
+
 }
