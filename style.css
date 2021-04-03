@@ -14,7 +14,7 @@ nav{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  min-height: 8vh;
+  min-height: 7vh;
   font-family: 'Tajawal', sans-serif;
   background-color: rgba(50,50,50,0.8);
 }
@@ -24,13 +24,13 @@ nav{
 .logo{
   color: #dfd9d8;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: calc(1.4rem - 0.4vw);
   margin-left: 10%;
 }
 
 /* MENU BUTTON */
 .nav-btn div{
-  width: 25px;
+  width: 35px;
   height: 5px;
   background-color: black;
   margin: 5px;
@@ -66,6 +66,10 @@ nav{
   width: 40px;
 }
 
+.ifcheck:hover{
+  cursor: pointer;
+}
+
 /* OPEN MENU WHEN CHECK BUTTON IS CHECKED */
 .ifcheck:checked ~ .menu-container{
   clip-path: circle(100%);
@@ -79,6 +83,7 @@ nav{
   left: 45%;
   list-style: none;
   text-align: center;
+  margin: auto;
 }
 
 /* MENU LIST ITEMS */
@@ -118,28 +123,13 @@ nav{
 
 @media screen and (max-width: 1024px) {
 
-  /* LOGO */
-  .logo{
-   color: #dfd9d8;
-   letter-spacing: 5px;
-   font-size: 1rem;
-   margin-left: 10%;
-  }
-
   /* MENU BUTTON */
   .nav-btn div{
-   width: 25px;
-   height: 5px;
-   background-color: black;
-   margin: 5px;
-   border-radius: 50px;
+   width: 35px;
   }
 
   /* HIDDEN CHECKBOX */
   .ifcheck{
-    position: absolute;
-    right: 0;
-    opacity: 0;
     width: 40px;
     height: 40px;
   }
@@ -148,28 +138,8 @@ nav{
 
 @media screen and (max-width: 950px) {
 
-  /* LOGO */
-  .logo{
-   color: #dfd9d8;
-   letter-spacing: 5px;
-   font-size: 2rem;
-   margin-left: 10%;
-  }
-
-  /* MENU BUTTON */
-  .nav-btn div{
-   width: 35px;
-   height: 6px;
-   background-color: black;
-   margin: 10px;
-   border-radius: 50px;
-  }
-
   /* HIDDEN CHECKBOX */
   .ifcheck{
-    position: absolute;
-    right: 0;
-    opacity: 0;
     width: 60px;
     height: 60px;
   }
@@ -178,28 +148,15 @@ nav{
 
 
 @media screen and (max-width: 650px) {
-  /* LOGO */
-  .logo{
-   color: #dfd9d8;
-   letter-spacing: 5px;
-   font-size: 3rem;
-   margin-left: 10%;
-  }
 
   /* MENU BUTTON */
   .nav-btn div{
-   width: 45px;
-   height: 7px;
-   background-color: black;
-   margin: 15px;
-   border-radius: 50px;
+   width: 30px;
+   margin: 5px;
   }
 
   /* HIDDEN CHECKBOX */
   .ifcheck{
-    position: absolute;
-    right: 0;
-    opacity: 0;
     width: 80px;
     height: 80px;
   }
@@ -209,28 +166,8 @@ nav{
 
 @media screen and (max-width: 480px) {
 
-  /* LOGO */
- .logo{
-   color: #dfd9d8;
-   letter-spacing: 5px;
-   font-size: 4rem;
-   margin-left: 10%;
- }
-
- /* MENU BUTTON */
- .nav-btn div{
-   width: 55px;
-   height: 8px;
-   background-color: black;
-   margin: 20px;
-   border-radius: 50px;
- }
-
  /* HIDDEN CHECKBOX */
  .ifcheck{
-   position: absolute;
-   right: 0;
-   opacity: 0;
    width: 100px;
    height: 100px;
  }
