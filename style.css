@@ -21,7 +21,6 @@ nav{
 
 
 /* LOGO */
-
 .logo{
   color: #dfd9d8;
   letter-spacing: 5px;
@@ -30,7 +29,6 @@ nav{
 }
 
 /* MENU BUTTON */
-
 .nav-btn div{
   width: 25px;
   height: 5px;
@@ -44,8 +42,8 @@ nav{
 
 /* _____________MAIN MENU____________ */
 
-/* MENU CONTAINER */
 
+/* MENU CONTAINER */
 .menu-container{
   position: absolute;
   top: 0;
@@ -59,23 +57,22 @@ nav{
   opacity: 0.8;
 }
 
-.ifcheck:checked ~ .menu-container{
-  clip-path: circle(100%);
-}
-
 /* CHECK BUTTON BEHIND NAV BUTTON */
-
 .ifcheck{
   position: absolute;
   right: 0;
-  opacity: 1;
+  opacity: 0;
   height: 40px;
   width: 40px;
 }
 
+/* OPEN MENU WHEN CHECK BUTTON IS CHECKED */
+.ifcheck:checked ~ .menu-container{
+  clip-path: circle(100%);
+}
+
 
 /* MENU LIST  */
-
 .menu{
   position: absolute;
   top: 45%;
@@ -84,12 +81,12 @@ nav{
   text-align: center;
 }
 
+/* MENU LIST ITEMS */
 .menu li{
   margin: 20px 0;
 }
 
 /* MENU LINKS */
-
 .menu a{
   font-size: 33px;
   text-decoration: none;
@@ -99,6 +96,7 @@ nav{
   text-shadow: 2px 2px 4px #000000;
 }
 
+/* MENU LINKS HOVER */
 .menu a:hover{
   cursor: url("./imgs/bomb.png"),auto;
   background: -webkit-linear-gradient(pink , black);
@@ -106,12 +104,17 @@ nav{
   -webkit-text-fill-color: transparent;
 }
 
+/* MENU LINKS ACTIVE */
 .menu a:active{
   color: #4b1d13;
   cursor: url("./imgs/explode.png"),auto;
 }
 
-/* SCREENSS */
+/* _____________END OF MAIN MENU____________ */
+
+
+/* _____________RESPOOONSIVE SCREEENS______________ */
+
 
 @media screen and (max-width: 1024px) {
 
@@ -124,7 +127,6 @@ nav{
   }
 
   /* MENU BUTTON */
-
   .nav-btn div{
    width: 25px;
    height: 5px;
@@ -133,11 +135,11 @@ nav{
    border-radius: 50px;
   }
 
-  /* hidden checkbox */
+  /* HIDDEN CHECKBOX */
   .ifcheck{
     position: absolute;
     right: 0;
-    opacity: 1;
+    opacity: 0;
     width: 40px;
     height: 40px;
   }
@@ -145,6 +147,7 @@ nav{
 }
 
 @media screen and (max-width: 950px) {
+
   /* LOGO */
   .logo{
    color: #dfd9d8;
@@ -154,7 +157,6 @@ nav{
   }
 
   /* MENU BUTTON */
-
   .nav-btn div{
    width: 35px;
    height: 6px;
@@ -163,11 +165,11 @@ nav{
    border-radius: 50px;
   }
 
-  /* hidden checkbox */
+  /* HIDDEN CHECKBOX */
   .ifcheck{
     position: absolute;
     right: 0;
-    opacity: 1;
+    opacity: 0;
     width: 60px;
     height: 60px;
   }
@@ -185,7 +187,6 @@ nav{
   }
 
   /* MENU BUTTON */
-
   .nav-btn div{
    width: 45px;
    height: 7px;
@@ -194,11 +195,11 @@ nav{
    border-radius: 50px;
   }
 
-  /* hidden checkbox */
+  /* HIDDEN CHECKBOX */
   .ifcheck{
     position: absolute;
     right: 0;
-    opacity: 1;
+    opacity: 0;
     width: 80px;
     height: 80px;
   }
@@ -207,6 +208,7 @@ nav{
 }
 
 @media screen and (max-width: 480px) {
+
   /* LOGO */
  .logo{
    color: #dfd9d8;
@@ -216,8 +218,6 @@ nav{
  }
 
  /* MENU BUTTON */
-
-
  .nav-btn div{
    width: 55px;
    height: 8px;
@@ -226,7 +226,7 @@ nav{
    border-radius: 50px;
  }
 
- /* hidden checkbox */
+ /* HIDDEN CHECKBOX */
  .ifcheck{
    position: absolute;
    right: 0;
@@ -236,3 +236,5 @@ nav{
  }
 
 }
+
+/* _____________END OF RESPOOONSIVE SCREEENS______________ */
